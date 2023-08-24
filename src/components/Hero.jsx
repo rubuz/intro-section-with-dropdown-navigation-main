@@ -7,17 +7,17 @@ import heroPicture from "../assets/image-hero-desktop.png";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1100px] mx-auto grid grid-cols-2 gap-32 items-end justify-center">
+    <div className="max-w-[1150px] p-4 mx-auto grid grid-cols-2 gap-32 items-end justify-center">
       <div>
         <div className="flex flex-col items-start gap-8">
           <h1 className="text-almost-black font-bold text-[4rem]">
-            Make <br /> remote work
+            Make remote work
           </h1>
-          <p className="text-medium-gray">
+          <p className="text-medium-gray max-w-[90%]">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <button className="bg-almost-black px-7 py-2 text-alomost-white rounded-xl border-2 border-almost-black hover:bg-transparent hover:text-almost-black hover:border-almost-black hover:border-2 duration-200">
+          <button className="cursor-pointer bg-almost-black px-7 py-2 text-alomost-white rounded-xl border-2 border-almost-black hover:bg-transparent hover:text-almost-black hover:border-almost-black hover:border-2 duration-200">
             Learn More
           </button>
         </div>
@@ -28,7 +28,7 @@ const Hero = () => {
           <img src={maker} alt="maker logo" />
         </div>
       </div>
-      <div>
+      <div className="self-center">
         <img
           src={heroPicture}
           alt="hero picture with shapes and man standing with laptop"
