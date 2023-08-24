@@ -44,15 +44,17 @@ const Navbar = () => {
             <a href="#" className="hover:text-almost-black duration-200 ">
               Features
             </a>
-            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path
-                className="arrow-down"
-                stroke="#686868"
-                stroke-width="1.5"
-                fill="none"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
+            <div className={dropdownFeatures ? "arrow-u" : "arrow-d"}>
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  className="arrow-down"
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </div>
             {/* {dropdownFeatures && (
               <div
                 className="absolute top-10 right-0"
@@ -79,15 +81,17 @@ const Navbar = () => {
             <a href="#" className="hover:text-almost-black duration-200 ">
               Company
             </a>
-            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path
-                className="arrow-down"
-                stroke="#686868"
-                stroke-width="1.5"
-                fill="none"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
+            <div className={dropdownCompany ? "arrow-u" : "arrow-d"}>
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  className="arrow-down"
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </div>
             {/* {dropdownCompany && (
               <div className="absolute top-10 right-0" ref={dropdownCompanyRef}>
                 <NavbarCompanyDown />
