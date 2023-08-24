@@ -7,10 +7,10 @@ import heroPicture from "../assets/image-hero-desktop.png";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1150px] p-4 mx-auto grid grid-cols-2 gap-32 items-end justify-center">
+    <div className="max-w-[1150px] p-6 mx-auto grid grid-cols-2 gap-32 items-end justify-center">
       <div>
         <div className="flex flex-col items-start gap-8">
-          <h1 className="text-almost-black font-bold text-[4rem]">
+          <h1 className="text-almost-black font-bold text-[4rem] leading-none ">
             Make remote work
           </h1>
           <p className="text-medium-gray max-w-[90%]">
@@ -21,7 +21,7 @@ const Hero = () => {
             Learn More
           </button>
         </div>
-        <div className="flex items-center justify-start mt-20 gap-7">
+        <div className="flex items-center justify-start mt-28 gap-7">
           <img src={databiz} alt="databiz logo" />
           <img src={audiophile} alt="audiophile logo" />
           <img src={meet} alt="meet logo" />

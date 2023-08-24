@@ -1,0 +1,4 @@
+.dropdown-link:hover .arrow-down {
+  stroke: #141414;
+  transition-duration: 0.2s;
+}
