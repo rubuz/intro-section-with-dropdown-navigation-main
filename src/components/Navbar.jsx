@@ -10,28 +10,28 @@ const Navbar = () => {
   const dropdownFeaturesRef = useRef(null);
   const dropdownCompanyRef = useRef(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        dropdownFeaturesRef.current &&
-        !dropdownFeaturesRef.current.contains(event.target)
-      ) {
-        setDropdownFeatures(false);
-      }
-      if (
-        dropdownCompanyRef.current &&
-        !dropdownCompanyRef.current.contains(event.target)
-      ) {
-        setDropdownCompany(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (
+  //       dropdownFeaturesRef.current &&
+  //       !dropdownFeaturesRef.current.contains(event.target)
+  //     ) {
+  //       setDropdownFeatures(false);
+  //     }
+  //     if (
+  //       dropdownCompanyRef.current &&
+  //       !dropdownCompanyRef.current.contains(event.target)
+  //     ) {
+  //       setDropdownCompany(false);
+  //     }
+  //   };
 
-    document.addEventListener("mousedown", handleClickOutside);
+  //   document.addEventListener("mousedown", handleClickOutside);
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, []);
 
   return (
     <div className="lg:mr-auto">
@@ -42,7 +42,10 @@ const Navbar = () => {
             onClick={() => setDropdownFeatures(!dropdownFeatures)}
           >
             <div className="flex items-center gap-4">
-              <a href="#" className="hover:text-almost-black duration-200 ">
+              <a
+                href="#"
+                className="lg:hover:text-almost-black duration-200 active:text-almost-black"
+              >
                 Features
               </a>
               <div className={dropdownFeatures ? "arrow-u" : "arrow-d"}>
@@ -71,7 +74,7 @@ const Navbar = () => {
                   ? "lg:absolute top-10 right-0 scale-100 duration-100"
                   : "lg:absolute hidden top-10 right-0 scale-0 duration-100"
               }
-              ref={dropdownFeaturesRef}
+              // ref={dropdownFeaturesRef}
             >
               <NavbarFeaturesDown />
             </div>
@@ -81,7 +84,10 @@ const Navbar = () => {
             onClick={() => setDropdownCompany(!dropdownCompany)}
           >
             <div className="flex items-center gap-4">
-              <a href="#" className="hover:text-almost-black duration-200 ">
+              <a
+                href="#"
+                className="lg:hover:text-almost-black duration-200 active:text-almost-black"
+              >
                 Company
               </a>
               <div className={dropdownCompany ? "arrow-u" : "arrow-d"}>
@@ -107,18 +113,24 @@ const Navbar = () => {
                   ? "lg:absolute top-10 right-0 scale-100 duration-100"
                   : "lg:absolute hidden top-10 right-0 scale-0 duration-100"
               }
-              ref={dropdownCompanyRef}
+              // ref={dropdownCompanyRef}
             >
               <NavbarCompanyDown />
             </div>
           </li>
           <li>
-            <a href="#" className="hover:text-almost-black duration-200">
+            <a
+              href="#"
+              className="lg:hover:text-almost-black duration-200 active:text-almost-black"
+            >
               Careers
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-almost-black duration-200">
+            <a
+              href="#"
+              className="lg:hover:text-almost-black duration-200 active:text-almost-black"
+            >
               About
             </a>
           </li>
