@@ -6,7 +6,7 @@ import iconPlanning from "../assets/icon-planning.svg";
 
 const NavbarFeaturesDown = () => {
   return (
-    <ul className="lg:bg-white py-4 px-6 lg:rounded-xl lg:shadow-2xl flex flex-col gap-2 min-w-[120%]">
+    <ul className="lg:bg-white py-4 px-6 lg:rounded-xl lg:shadow-2xl flex flex-col gap-2 ">
       <li className="flex items-center gap-3">
         <div className="min-w-[20px]">
           <img src={iconTodo} alt="todo icon" />

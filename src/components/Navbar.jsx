@@ -71,7 +71,7 @@ const Navbar = () => {
             <div
               className={
                 dropdownFeatures
-                  ? "lg:absolute top-10 right-8 scale-100 duration-100"
+                  ? "lg:absolute top-10 right-0 scale-100 duration-100"
                   : "lg:absolute max-lg:hidden top-10 right-0 scale-0 duration-100"
               }
               // ref={dropdownFeaturesRef}
