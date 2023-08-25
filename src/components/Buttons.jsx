@@ -2,7 +2,7 @@ import React from "react";
 
 const Buttons = () => {
   return (
-    <div className="flex flex-col items-center lg:flex-row justify-center w-full">
+    <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-end w-full">
       <a href="#" className="hover:text-almost-black duration-200 text-center">
         Login
       </a>

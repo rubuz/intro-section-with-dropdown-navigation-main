@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div className="max-w-[1440px] mx-auto p-6 flex justify-between items-center text-medium-gray mb-7 gap-16">
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo" className="mt-2" />
       {windowWidth < 1024 ? (
         <NavbarMobile />
       ) : (
