@@ -6,27 +6,35 @@ import iconPlanning from "../assets/icon-planning.svg";
 
 const NavbarFeaturesDown = () => {
   return (
-    <ul className="bg-white py-4 px-6 rounded-xl shadow-2xl flex flex-col gap-2">
+    <ul className="lg:bg-white py-4 px-6 lg:rounded-xl lg:shadow-2xl flex flex-col gap-2 min-w-[120%]">
       <li className="flex items-center gap-3">
-        <img src={iconTodo} alt="todo icon" />
+        <div>
+          <img src={iconTodo} alt="todo icon" />
+        </div>
         <a href="" className="hover:text-almost-black duration-200">
           Todo List
         </a>
       </li>
       <li className="flex items-center gap-3">
-        <img src={iconCalendar} alt="calendar icon" />
+        <div>
+          <img src={iconCalendar} alt="calendar icon" />
+        </div>
         <a href="" className="hover:text-almost-black duration-200">
           Calendar
         </a>
       </li>
       <li className="flex items-center gap-3">
-        <img src={iconReminders} alt="reminder icon" />
+        <div>
+          <img src={iconReminders} alt="reminder icon" />
+        </div>
         <a href="" className="hover:text-almost-black duration-200">
           Reminders
         </a>
       </li>
       <li className="flex items-center gap-3">
-        <img src={iconPlanning} alt="planning icon" />
+        <div>
+          <img src={iconPlanning} alt="planning icon" />
+        </div>
         <a href="" className="hover:text-almost-black duration-200">
           Planning
         </a>

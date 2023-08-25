@@ -34,10 +34,18 @@ const Hero = () => {
           </button>
         </div>
         <div className="flex items-center justify-between mt-10 mx-2 lg:mt-28 gap-7">
-          <img src={databiz} alt="databiz logo" />
-          <img src={audiophile} alt="audiophile logo" />
-          <img src={meet} alt="meet logo" />
-          <img src={maker} alt="maker logo" />
+          <div>
+            <img src={databiz} alt="databiz logo" />
+          </div>
+          <div>
+            <img src={audiophile} alt="audiophile logo" />
+          </div>
+          <div>
+            <img src={meet} alt="meet logo" />
+          </div>
+          <div>
+            <img src={maker} alt="maker logo" />
+          </div>
         </div>
       </div>
       <div className="self-center lg:order-2">

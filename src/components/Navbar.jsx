@@ -34,26 +34,28 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="mr-auto">
+    <div className="lg:mr-auto">
       <nav>
-        <ul className="flex gap-12">
+        <ul className="flex lg:gap-12 lg:flex-row flex-col gap-4 lg:py-0 py-10 ">
           <li
-            className="flex items-center justify-between gap-2 relative dropdown-link"
+            className="flex lg:flex-row flex-col lg:items-center lg:justify-between relative dropdown-link"
             onClick={() => setDropdownFeatures(!dropdownFeatures)}
           >
-            <a href="#" className="hover:text-almost-black duration-200 ">
-              Features
-            </a>
-            <div className={dropdownFeatures ? "arrow-u" : "arrow-d"}>
-              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  className="arrow-down"
-                  stroke="#686868"
-                  stroke-width="1.5"
-                  fill="none"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
+            <div className="flex items-center gap-4">
+              <a href="#" className="hover:text-almost-black duration-200 ">
+                Features
+              </a>
+              <div className={dropdownFeatures ? "arrow-u" : "arrow-d"}>
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    className="arrow-down"
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </div>
             </div>
             {/* {dropdownFeatures && (
               <div
@@ -66,8 +68,8 @@ const Navbar = () => {
             <div
               className={
                 dropdownFeatures
-                  ? "absolute top-10 right-0 scale-100 duration-100"
-                  : "absolute top-10 right-0 scale-0 duration-100"
+                  ? "lg:absolute top-10 right-0 scale-100 duration-100"
+                  : "lg:absolute hidden top-10 right-0 scale-0 duration-100"
               }
               ref={dropdownFeaturesRef}
             >
@@ -75,22 +77,24 @@ const Navbar = () => {
             </div>
           </li>
           <li
-            className="flex items-center justify-between gap-2 relative dropdown-link"
+            className="flex lg:flex-row flex-col lg:items-center lg:justify-between relative dropdown-link"
             onClick={() => setDropdownCompany(!dropdownCompany)}
           >
-            <a href="#" className="hover:text-almost-black duration-200 ">
-              Company
-            </a>
-            <div className={dropdownCompany ? "arrow-u" : "arrow-d"}>
-              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  className="arrow-down"
-                  stroke="#686868"
-                  stroke-width="1.5"
-                  fill="none"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
+            <div className="flex items-center gap-4">
+              <a href="#" className="hover:text-almost-black duration-200 ">
+                Company
+              </a>
+              <div className={dropdownCompany ? "arrow-u" : "arrow-d"}>
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    className="arrow-down"
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </div>
             </div>
             {/* {dropdownCompany && (
               <div className="absolute top-10 right-0" ref={dropdownCompanyRef}>
@@ -100,8 +104,8 @@ const Navbar = () => {
             <div
               className={
                 dropdownCompany
-                  ? "absolute top-10 right-0 scale-100 duration-100"
-                  : "absolute top-10 right-0 scale-0 duration-100"
+                  ? "lg:absolute top-10 right-0 scale-100 duration-100"
+                  : "lg:absolute hidden top-10 right-0 scale-0 duration-100"
               }
               ref={dropdownCompanyRef}
             >
